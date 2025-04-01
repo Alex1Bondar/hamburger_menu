@@ -1,3 +1,82 @@
-.body {
-    background-color: cadetblue;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color:lightblue;
+    color: white;
+    padding: 20px;
+
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+nav {
+    margin-left: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+
+}
+
+nav ul li a {
+    color: white;
+    font-size: 36px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+nav ul li:not(:not :last-child) {
+    margin-right: 20px;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    color: rgb(224, 41, 41)
+}
+
+.hamb {
+flex-direction: column;
+cursor: pointer;
+
+}
+
+.hamb span {
+    display: block;
+width: 35px;
+height: 5px;
+margin-bottom: 7px;
+background-color: white;
+}
+
+.hanb {
+
+}
+nav ul.active {
+
+}
+
+
+@media (max-width: 760px) {
+    .hamb{
+        display: flex;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 50px;
+        background-color: chartreuse;
+    }
 }
